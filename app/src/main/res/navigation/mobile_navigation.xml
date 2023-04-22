@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_questions"
-        android:name="com.example.lab21.ui.dashboard.DashboardFragment"
+        android:name="com.example.lab21.ui.dashboard.QuestionsFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_analysis"
-        android:name="com.example.lab21.ui.notifications.NotificationsFragment"
+        android:name="com.example.lab21.ui.notifications.AnalysisFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
