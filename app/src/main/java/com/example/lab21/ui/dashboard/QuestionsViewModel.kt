@@ -5,9 +5,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class QuestionsViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+    private val _questionItems = MutableLiveData<List<QuestionItem>>().apply {
+        value = listOf(
+            QuestionItem("Sleep", "How did you sleep last night?"),
+            QuestionItem("Nutrition", "How was your nutrition today?"),
+            QuestionItem("Stress", "How stressed do you feel today?"),
+            QuestionItem("Alcohol", "Did you consume alcohol today?")
+        )
     }
-    val text: LiveData<String> = _text
+    val questionItems: LiveData<List<QuestionItem>> = _questionItems
 }

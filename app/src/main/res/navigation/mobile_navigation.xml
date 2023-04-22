@@ -15,7 +15,7 @@
         android:id="@+id/navigation_questions"
         android:name="com.example.lab21.ui.dashboard.QuestionsFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_question" />
 
     <fragment
         android:id="@+id/navigation_analysis"
