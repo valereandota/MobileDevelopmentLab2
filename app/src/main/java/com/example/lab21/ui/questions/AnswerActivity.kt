@@ -1,4 +1,4 @@
-package com.example.lab21.ui.dashboard
+package com.example.lab21.ui.questions
 
 import android.os.Bundle
 import android.util.Log
@@ -41,21 +41,6 @@ class AnswerActivity : AppCompatActivity(), TextClassificationHelper.TextResults
 
     override fun onResult(results: List<Category>, inferenceTime: Long) {
         runOnUiThread {
-            // Process the results here. You can, for example, show the results in a TextView or store them in a variable
-            val resultText = results.joinToString(separator = "\n") { "${it.label}: ${it.score}" }
-            findViewById<TextView>(R.id.resultTextView).text = resultText
-
-            // You can also check for specific labels or score thresholds to determine the classification
-            val negativeLabel = "Negative"
-            val accuracyThreshold = 0.8
-
-            results.find { it.label == negativeLabel }?.let { negativeCategory ->
-                if (negativeCategory.score >= accuracyThreshold) {
-                    Log.d("RESULT", "NEGATIVE")
-
-                    // The answer has a high negative classification score. Handle this case accordingly.
-                }
-            }
         }
     }
 }

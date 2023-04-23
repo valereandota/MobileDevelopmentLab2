@@ -1,4 +1,4 @@
-package com.example.lab21.ui.dashboard
+package com.example.lab21.ui.questions
 
 /*
  * Copyright 2022 The TensorFlow Authors. All Rights Reserved.

@@ -1,4 +1,4 @@
-package com.example.lab21.ui.dashboard
+package com.example.lab21.ui.questions
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

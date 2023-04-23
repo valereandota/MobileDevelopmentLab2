@@ -1,4 +1,4 @@
-package com.example.lab21.ui.notifications
+package com.example.lab21.ui.analysis
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

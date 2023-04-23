@@ -1,4 +1,4 @@
-package com.example.lab21.ui.dashboard
+package com.example.lab21.ui.questions
 
 import android.view.LayoutInflater
 import android.view.View
