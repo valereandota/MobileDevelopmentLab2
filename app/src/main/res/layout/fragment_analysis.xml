@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ui.analysis.AnalysisFragment">
 
-    <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/bar_chart"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="416dp"
+        android:layout_height="714dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </com.github.mikephil.charting.charts.BarChart>
 </androidx.constraintlayout.widget.ConstraintLayout>

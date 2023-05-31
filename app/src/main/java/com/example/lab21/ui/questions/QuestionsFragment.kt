@@ -26,9 +26,9 @@ class QuestionsFragment : Fragment() {
         _binding = FragmentQuestionBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        questionsViewModel = ViewModelProvider(this).get(QuestionsViewModel::class.java)
+        questionsViewModel = ViewModelProvider(this)[QuestionsViewModel::class.java]
 
-        // Initialize RecyclerView
+
         questionsAdapter = QuestionAdapter { questionItem ->
             val intent = Intent(context, AnswerActivity::class.java)
             intent.putExtra("category", questionItem.category)
@@ -41,7 +41,6 @@ class QuestionsFragment : Fragment() {
             adapter = questionsAdapter
         }
 
-        // Observe changes in question items
         questionsViewModel.questionItems.observe(viewLifecycleOwner) { questionItems ->
             questionsAdapter.updateQuestions(questionItems)
         }
